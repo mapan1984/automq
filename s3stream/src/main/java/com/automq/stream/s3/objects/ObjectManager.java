@@ -39,7 +39,7 @@ public interface ObjectManager {
     CompletableFuture<CommitStreamSetObjectResponse> commitStreamSetObject(CommitStreamSetObjectRequest request);
 
     /**
-     * Compact stream object. When the source object has no reference, then delete it.
+     * Compact stream object. When the target object has no reference, then delete source objects.
      *
      * @param request {@link CompactStreamObjectRequest}
      */
